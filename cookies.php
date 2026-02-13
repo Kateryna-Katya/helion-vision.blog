@@ -12,11 +12,11 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
 
 ?>
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $domainTitle ?> — IT-школа нового поколения</title>
+    <title><?= $domainTitle ?> — Politica sui Cookie</title>
     
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232563eb%22/><path d=%22M30 30L70 70M70 30L30 70%22 stroke=%22white%22 stroke-width=%2212%22 stroke-linecap=%22round%22/></svg>">
 
@@ -39,16 +39,16 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
             
             <nav class="nav">
                 <ul class="nav__list">
-                    <li><a href="./#hero" class="nav__link">Главная</a></li>
-                    <li><a href="./#courses" class="nav__link">Курсы</a></li>
-                    <li><a href="./#benefits" class="nav__link">Преимущества</a></li>
-                    <li><a href="./#method" class="nav__link">Методология</a></li>
-                    <li><a href="./#reviews" class="nav__link">Отзывы</a></li>
+                    <li><a href="./#hero" class="nav__link">Home</a></li>
+                    <li><a href="./#courses" class="nav__link">Corsi</a></li>
+                    <li><a href="./#benefits" class="nav__link">Vantaggi</a></li>
+                    <li><a href="./#method" class="nav__link">Metodologia</a></li>
+                    <li><a href="./#reviews" class="nav__link">Recensioni</a></li>
                 </ul>
             </nav>
 
             <a href="./#contact" class="btn btn--header">
-                <span>Связаться</span>
+                <span>Contattaci</span>
                 <i data-lucide="arrow-up-right"></i>
             </a>
 
@@ -57,77 +57,77 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
             </button>
         </div>
     </header>
+
     <main class="legal-page">
     <section class="pages">
         <div class="container">
-            <span class="section-tag reveal-item">Legal Documents</span>
-            <h1 class="reveal-item">Политика использования файлов cookie</h1>
+            <span class="section-tag reveal-item">Documenti Legali</span>
+            <h1 class="reveal-item">Politica sui file cookie</h1>
 
             <div class="legal-content">
                 <p class="lead-text reveal-item">
-                    Добро пожаловать на <strong><?= $domainTitle ?></strong>! Чтобы улучшить ваш опыт
-                    взаимодействия с нашим сайтом, обеспечить его корректную работу и
-                    анализировать активность пользователей, мы используем файлы cookie и
-                    схожие технологии.
+                    Benvenuti su <strong><?= $domainTitle ?></strong>! Per migliorare la vostra esperienza 
+                    di interazione con il nostro sito, garantire il suo corretto funzionamento e 
+                    analizzare l'attività degli utenti, utilizziamo i file cookie e tecnologie simili.
                 </p>
 
                 <div class="legal-block reveal-item">
-                    <h2>Что такое файлы cookie?</h2>
+                    <h2>Cosa sono i file cookie?</h2>
                     <p>
-                        Файл cookie — это небольшой фрагмент данных (текстовый файл),
-                        который веб-сайт сохраняет на вашем устройстве, когда вы его посещаете. 
-                        Это позволяет платформе <strong><?= $domainTitle ?></strong> "помнить" ваши действия и предпочтения 
-                        (например, логин, язык, настройки региона Франция и другие параметры) 
-                        в течение определенного времени.
+                        Un file cookie è un piccolo frammento di dati (file di testo) 
+                        che un sito web salva sul vostro dispositivo quando lo visitate. 
+                        Questo permette alla piattaforma <strong><?= $domainTitle ?></strong> di "ricordare" le vostre azioni e preferenze 
+                        (ad esempio, login, lingua, impostazioni della regione Italia e altri parametri) 
+                        per un certo periodo di tempo.
                     </p>
                 </div>
 
                 <div class="legal-block reveal-item">
-                    <h2>Какие типы файлов cookie мы используем?</h2>
+                    <h2>Quali tipi di cookie utilizziamo?</h2>
                     <p>
-                        Мы классифицируем файлы cookie, используемые на сайте <strong><?= $fullDomain ?></strong>, по
-                        следующим категориям:
+                        Classifichiamo i cookie utilizzati sul sito <strong><?= $fullDomain ?></strong> nelle 
+                        seguenti categorie:
                     </p>
                     <ul class="legal-list">
                         <li>
-                            <strong>Строго необходимые:</strong> Критически важны для функционирования. Позволяют перемещаться по страницам <strong><?= $domainTitle ?></strong>.
+                            <strong>Strettamente necessari:</strong> Fondamentali per il funzionamento. Permettono di navigare tra le pagine di <strong><?= $domainTitle ?></strong>.
                         </li>
                         <li>
-                            <strong>Аналитические:</strong> Сбор анонимной информации о том, как посетители используют наш сайт.
+                            <strong>Analitici:</strong> Raccolta di informazioni anonime su come i visitatori utilizzano il nostro sito.
                         </li>
                         <li>
-                            <strong>Функциональные:</strong> Позволяют запоминать ваш выбор для персонализированного опыта в рамках IT-обучения.
+                            <strong>Funzionali:</strong> Permettono di ricordare le vostre scelte per un'esperienza personalizzata nell'ambito della formazione IT.
                         </li>
                         <li>
-                            <strong>Маркетинговые:</strong> Используются для доставки объявлений, соответствующих вашим интересам.
+                            <strong>Di marketing:</strong> Utilizzati per fornire annunci pertinenti ai vostri interessi.
                         </li>
                     </ul>
                 </div>
 
                 <div class="legal-block reveal-item">
-                    <h2>Зачем мы используем файлы cookie?</h2>
+                    <h2>Perché utilizziamo i cookie?</h2>
                     <ul class="legal-list">
-                        <li>Обеспечение стабильной и безопасной работы платформы.</li>
-                        <li>Анализ пользовательского поведения для оптимизации курсов.</li>
-                        <li>Персонализация контента для пользователей в Европе.</li>
-                        <li>Предоставление релевантных маркетинговых материалов.</li>
+                        <li>Garantire un funzionamento stabile e sicuro della piattaforma.</li>
+                        <li>Analizzare il comportamento degli utenti per ottimizzare i corsi.</li>
+                        <li>Personalizzare i contenuti per gli utenti in Europa.</li>
+                        <li>Fornire materiali di marketing pertinenti.</li>
                     </ul>
                 </div>
 
                 <div class="legal-block reveal-item">
-                    <h2>Ваш выбор и управление</h2>
+                    <h2>Le vostre scelte e gestione</h2>
                     <p>
-                        Вы имеете полный контроль над файлами cookie. Вы можете в любой
-                        момент изменить свои настройки в браузере. Однако, обратите
-                        внимание: отключение строго необходимых cookie может привести к
-                        некорректной работе некоторых функций.
+                        Avete il pieno controllo sui file cookie. Potete in qualsiasi 
+                        momento modificare le vostre impostazioni nel browser. Tuttavia, 
+                        tenete presente che la disattivazione dei cookie strettamente necessari può 
+                        causare il malfunzionamiento di alcune funzioni.
                     </p>
                 </div>
 
                 <div class="contact-info-block reveal-item">
-                    <h2>Контактная информация</h2>
+                    <h2>Informazioni di contatto</h2>
                     <p>
-                        Если у вас возникли вопросы касательно политики на <strong><?= $domainTitle ?></strong>, свяжитесь с нами:
+                        Se avete domande riguardanti la politica su <strong><?= $domainTitle ?></strong>, contattateci:
                     </p>
                     <ul class="contact-data">
                         <li>
@@ -136,11 +136,11 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
                         </li>
                         <li>
                             <i data-lucide="phone"></i>
-                            <strong>Телефон:</strong> <a href="tel:+33189480054">+33 1 89 48 00 54</a>
+                            <strong>Telefono:</strong> <a href="tel:+390697639128">+39 06 9763 9128</a>
                         </li>
                         <li>
                             <i data-lucide="map-pin"></i>
-                            <strong>Адрес:</strong> 15 Rue de la Paix, 75002 Paris, France
+                            <strong>Indirizzo:</strong> Via della Conciliazione, 15, 00193 Roma RM, Italia
                         </li>
                     </ul>
                 </div>
@@ -155,35 +155,35 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
                 <a href="./#hero" class="logo logo--footer">
                     <span class="logo__text"><?= $domainTitle ?></span>
                 </a>
-                <p class="footer__tagline">Технологии нового поколения для вашего карьерного взлета.</p>
+                <p class="footer__tagline">Tecnologie di nuova generazione per il tuo successo professionale.</p>
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Навигация</h4>
+                <h4 class="footer__title">Navigazione</h4>
                 <ul class="footer__links">
-                    <li><a href="./#hero">Главная</a></li>
-                    <li><a href="./#courses">Курсы</a></li>
-                    <li><a href="./#benefits">Преимущества</a></li>
-                    <li><a href="./#reviews">Отзывы</a></li>
+                    <li><a href="./#hero">Home</a></li>
+                    <li><a href="./#courses">Corsi</a></li>
+                    <li><a href="./#benefits">Vantaggi</a></li>
+                    <li><a href="./#reviews">Recensioni</a></li>
                 </ul>
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Юридическая информация</h4>
+                <h4 class="footer__title">Informazioni Legali</h4>
                 <ul class="footer__links">
-                    <li><a href="./privacy.php">Политика конфиденциальности</a></li>
-                    <li><a href="./cookies.php">Cookie файлы</a></li>
-                    <li><a href="./terms.php">Условия использования</a></li>
-                    <li><a href="./personal-data-policy.php">Персональные данные</a></li>
+                    <li><a href="./privacy.php">Privacy Policy</a></li>
+                    <li><a href="./cookies.php">Cookie Policy</a></li>
+                    <li><a href="./terms.php">Termini di Utilizzo</a></li>
+                    <li><a href="./personal-data-policy.php">Dati Personali</a></li>
                 </ul>
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Контакты</h4>
+                <h4 class="footer__title">Contatti</h4>
                 <ul class="footer__contact-list">
                     <li>
                         <i data-lucide="phone"></i>
-                        <a href="tel:+33189480054">+33 1 89 48 00 54</a>
+                        <a href="tel:+390697639128">+39 06 9763 9128</a>
                     </li>
                     <li>
                         <i data-lucide="mail"></i>
@@ -191,25 +191,27 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
                     </li>
                     <li>
                         <i data-lucide="map-pin"></i>
-                        <span>15 Rue de la Paix, 75002 Paris, France</span>
+                        <span>Via della Conciliazione, 15, 00193 Roma RM, Italia</span>
                     </li>
                 </ul>
             </div>
         </div>
         
         <div class="container footer__bottom">
-            <p>&copy; 2026 <?= $domainTitle ?>. Все права защищены.</p>
+            <p>&copy; 2026 <?= $domainTitle ?>. Tutti i diritti riservati.</p>
             <div class="footer__legal-inline">
-                <a href="./return.php">Возврат</a>
-                <a href="./disclaimer.php">Отказ от ответственности</a>
-                <a href="./contact.php">Контакты</a>
+                <a href="./return.php">Rimborsi</a>
+                <a href="./disclaimer.php">Disclaimer</a>
+                <a href="./contact.php">Contatti</a>
             </div>
         </div>
     </footer>
+
     <div id="cookie-popup" class="cookie-popup">
-        <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.php">Cookie политике</a>.</p>
-        <button id="cookie-accept" class="btn btn--header">Принять</button>
+        <p>Questo sito utilizza i cookie per migliorare l'esperienza. Maggiori informazioni nella nostra <a href="./cookies.php">Cookie Policy</a>.</p>
+        <button id="cookie-accept" class="btn btn--header">Accetta</button>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>

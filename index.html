@@ -1,41 +1,49 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $domainTitle ?> — IT-школа нового поколения</title>
-    
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232563eb%22/><path d=%22M30 30L70 70M70 30L30 70%22 stroke=%22white%22 stroke-width=%2212%22 stroke-linecap=%22round%22/></svg>">
+    <title>
+        <?= $domainTitle ?> — Scuola IT di nuova generazione
+    </title>
+
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232563eb%22/><path d=%22M30 30L70 70M70 30L30 70%22 stroke=%22white%22 stroke-width=%2212%22 stroke-linecap=%22round%22/></svg>">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sora:wght@600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header class="header">
         <div class="container header__container">
             <a href="./#hero" class="logo">
                 <span class="logo__icon"></span>
-                <span class="logo__text"><?= $domainTitle ?></span>
+                <span class="logo__text">
+                    <?= $domainTitle ?>
+                </span>
             </a>
-            
+
             <nav class="nav">
                 <ul class="nav__list">
-                    <li><a href="./#hero" class="nav__link">Главная</a></li>
-                    <li><a href="./#courses" class="nav__link">Курсы</a></li>
-                    <li><a href="./#benefits" class="nav__link">Преимущества</a></li>
-                    <li><a href="./#method" class="nav__link">Методология</a></li>
-                    <li><a href="./#reviews" class="nav__link">Отзывы</a></li>
+                    <li><a href="./#hero" class="nav__link">Home</a></li>
+                    <li><a href="./#courses" class="nav__link">Corsi</a></li>
+                    <li><a href="./#benefits" class="nav__link">Vantaggi</a></li>
+                    <li><a href="./#method" class="nav__link">Metodologia</a></li>
+                    <li><a href="./#reviews" class="nav__link">Recensioni</a></li>
                 </ul>
             </nav>
 
             <a href="./#contact" class="btn btn--header">
-                <span>Связаться</span>
+                <span>Contattaci</span>
                 <i data-lucide="arrow-up-right"></i>
             </a>
 
@@ -51,281 +59,248 @@
                 <div class="hero__content">
                     <div class="hero__badge fade-in">
                         <span class="badge__dot"></span>
-                        <span class="badge__text">Платформа года в Европе</span>
+                        <span class="badge__text">Piattaforma dell'anno in Europa</span>
                     </div>
                     <h1 class="hero__title">
-                        Постройте карьеру, которая <span class="text-gradient">работает на вас</span>
+                        Costruisci una carriera che <span class="text-gradient">lavora per te</span>
                     </h1>
                     <p class="hero__description fade-in">
-                        <?= $domainTitle ?> — это инновационная технология обучения IT-профессиям. Мы объединяем передовую цифровую инфраструктуру и практики, применимые уже сегодня.
+                        <?= $domainTitle ?> è una tecnologia innovativa per l'apprendimento delle professioni IT. Uniamo
+                        infrastrutture digitali all'avanguardia e pratiche applicabili già oggi.
                     </p>
                     <div class="hero__actions fade-in">
                         <a href="#contact" class="btn btn--primary">
-                            <span>Начать сейчас</span>
+                            <span>Inizia ora</span>
                             <i data-lucide="zap"></i>
                         </a>
                         <a href="#courses" class="btn btn--outline">
-                            <span>Узнать детали</span>
+                            <span>Scopri i dettagli</span>
                         </a>
                     </div>
-                    
+
                     <div class="hero__stats fade-in">
                         <div class="stat-item">
                             <span class="stat-item__num">1200+</span>
-                            <span class="stat-item__label">студентов во Франции</span>
+                            <span class="stat-item__label">studenti in Italia</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-item__num">98%</span>
-                            <span class="stat-item__label">трудоустройства</span>
+                            <span class="stat-item__label">tasso di occupazione</span>
                         </div>
                     </div>
                 </div>
-        
+
                 <div id="hero-visual" class="hero__visual-webgl">
                 </div>
             </div>
         </section>
+
         <section class="courses" id="courses">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Направления, которые <br> <span class="text-gradient">меняют правила игры</span></h2>
-                    <p class="section-subtitle">Выберите свой путь в технологиях нового поколения. Программы адаптированы под рынок труда ЕС.</p>
+                    <h2 class="section-title">Settori che <br> <span class="text-gradient">cambiano le regole</span>
+                    </h2>
+                    <p class="section-subtitle">Scegli il tuo percorso nelle tecnologie di nuova generazione. Programmi
+                        adattati al mercato del lavoro UE.</p>
                 </div>
-        
+
                 <div class="courses__grid">
                     <div class="course-card" data-aos="fade-up">
                         <div class="course-card__icon">
                             <i data-lucide="code-2"></i>
                         </div>
                         <h3 class="course-card__title">Fullstack Developer</h3>
-                        <p class="course-card__text">Освойте разработку от интерфейса до архитектуры баз данных. Старт с нуля до Junior+ за 6 месяцев.</p>
+                        <p class="course-card__text">Padroneggia lo sviluppo dall'interfaccia all'architettura del
+                            database. Da zero a Junior+ in 6 mesi.</p>
                         <ul class="course-card__tags">
                             <li>React</li>
                             <li>Node.js</li>
                             <li>PostgreSQL</li>
                         </ul>
                         <div class="course-card__footer">
-                            <span class="course-price">от €299/мес</span>
+                            <span class="course-price">da €299/mese</span>
                             <a href="#contact" class="btn-circle"><i data-lucide="arrow-right"></i></a>
                         </div>
                     </div>
-        
+
                     <div class="course-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="course-card__icon">
                             <i data-lucide="brain-circuit"></i>
                         </div>
                         <h3 class="course-card__title">AI & Machine Learning</h3>
-                        <p class="course-card__text">Инновационная технология будущего. Обучение созданию нейросетей и внедрению AI в бизнес-процессы.</p>
+                        <p class="course-card__text">La tecnologia del futuro. Impara a creare reti neurali e a
+                            implementare l'AI nei processi aziendali.</p>
                         <ul class="course-card__tags">
                             <li>Python</li>
                             <li>PyTorch</li>
                             <li>LLM</li>
                         </ul>
                         <div class="course-card__footer">
-                            <span class="course-price">от €349/мес</span>
+                            <span class="course-price">da €349/mese</span>
                             <a href="#contact" class="btn-circle"><i data-lucide="arrow-right"></i></a>
                         </div>
                     </div>
-        
+
                     <div class="course-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="course-card__icon">
                             <i data-lucide="shield-check"></i>
                         </div>
                         <h3 class="course-card__title">Cybersecurity Expert</h3>
-                        <p class="course-card__text">Защита цифровой инфраструктуры. Практики, применимые уже сегодня в крупнейших компаниях Европы.</p>
+                        <p class="course-card__text">Protezione delle infrastrutture digitali. Pratiche applicate oggi
+                            nelle maggiori aziende europee.</p>
                         <ul class="course-card__tags">
                             <li>Ethical Hacking</li>
                             <li>Linux</li>
                             <li>SecOps</li>
                         </ul>
                         <div class="course-card__footer">
-                            <span class="course-price">от €319/мес</span>
+                            <span class="course-price">da €319/mese</span>
                             <a href="#contact" class="btn-circle"><i data-lucide="arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="benefits" id="benefits">
             <div class="container">
                 <div class="benefits__grid">
                     <div class="benefits__content">
-                        <h2 class="section-title">Почему выбирают <br><span class="text-gradient">наши технологии</span></h2>
-                        <p class="section-subtitle">Мы создали среду, где обучение превращается в технологический процесс с гарантированным результатом.</p>
-                        
+                        <h2 class="section-title">Perché scegliere <br><span class="text-gradient">le nostre
+                                tecnologie</span></h2>
+                        <p class="section-subtitle">Abbiamo creato un ambiente dove l'apprendimento diventa un processo
+                            tecnologico con risultati garantiti.</p>
+
                         <div class="benefits__main-card" data-aos="fade-right">
                             <div class="benefits__main-icon">
                                 <i data-lucide="cpu"></i>
                             </div>
                             <div>
-                                <h4>Инновационная технология обучения</h4>
-                                <p>Используем AI-инструменты для реальных задач, что позволяет сократить время освоения материала на 40%.</p>
+                                <h4>Tecnologia di formazione innovativa</h4>
+                                <p>Utilizziamo strumenti AI per compiti reali, riducendo i tempi di apprendimento del
+                                    40%.</p>
                             </div>
                         </div>
                     </div>
-        
+
                     <div class="benefits__cards">
                         <div class="benefit-item" data-aos="zoom-in">
                             <div class="benefit-item__icon"><i data-lucide="rocket"></i></div>
-                            <h3>Быстрый и лёгкий старт</h3>
-                            <p>Легко разобраться без опыта. Пошаговая адаптация без сложностей с первого дня.</p>
+                            <h3>Inizio rapido e facile</h3>
+                            <p>Facile da capire senza esperienza. Adattamento passo dopo passo fin dal primo giorno.</p>
                         </div>
-        
+
                         <div class="benefit-item" data-aos="zoom-in" data-aos-delay="100">
                             <div class="benefit-item__icon"><i data-lucide="layers"></i></div>
-                            <h3>Передовая инфраструктура</h3>
-                            <p>Доступ к платформе открыт из любой точки мира. Технологии, которые работают на вас.</p>
+                            <h3>Infrastruttura avanzata</h3>
+                            <p>Accesso alla piattaforma da qualsiasi parte del mondo. Tecnologie al tuo servizio.</p>
                         </div>
-        
+
                         <div class="benefit-item" data-aos="zoom-in" data-aos-delay="200">
                             <div class="benefit-item__icon"><i data-lucide="users"></i></div>
-                            <h3>Экспертная поддержка</h3>
-                            <p>Методологии, доказавшие эффективность, и поддержка по всем вопросам 24/7.</p>
+                            <h3>Supporto esperto</h3>
+                            <p>Metodologie comprovate e supporto dedicato per ogni domanda 24/7.</p>
                         </div>
-        
+
                         <div class="benefit-item" data-aos="zoom-in" data-aos-delay="300">
                             <div class="benefit-item__icon"><i data-lucide="trending-up"></i></div>
-                            <h3>Стратегия роста</h3>
-                            <p>Программа, нацеленная на пассивный доход и карьерный апгрейд на базе инноваций.</p>
+                            <h3>Strategia di crescita</h3>
+                            <p>Programma mirato alla carriera e all'aggiornamento professionale basato sull'innovazione.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="method" id="method">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Ваш путь к <span class="text-gradient">офферу</span></h2>
-                    <p class="section-subtitle">Пошаговый путь, понятный каждому: от первой строчки кода до работы в Европе.</p>
+                    <h2 class="section-title">Il tuo percorso verso <span class="text-gradient">l'offerta</span></h2>
+                    <p class="section-subtitle">Un percorso chiaro per tutti: dalla prima riga di codice al lavoro in
+                        Europa.</p>
                 </div>
-                
+
                 <div class="method__list">
                     <div class="method__item" data-aos="fade-up">
                         <div class="method__info">
                             <span class="step-num">01</span>
-                            <h3>Глубокая теория</h3>
-                            <p>Изучаете базу по методологии «от простого к сложному». Доступ к платформе открыт 24/7. Передовая цифровая инфраструктура позволяет учиться в своем темпе.</p>
+                            <h3>Teoria approfondita</h3>
+                            <p>Impara le basi con la metodologia "dal semplice al complesso". Accesso h24
+                                all'infrastruttura digitale avanzata.</p>
                         </div>
                         <div class="method__image-box">Step 01</div>
                     </div>
-        
+
                     <div class="method__item" data-aos="fade-up">
                         <div class="method__info">
                             <span class="step-num">02</span>
-                            <h3>Hard-практика</h3>
-                            <p>Решения, которые меняют правила игры. Вы пишете код, который работает в реальных условиях под присмотром опытных наставников.</p>
+                            <h3>Pratica intensiva</h3>
+                            <p>Soluzioni che cambiano le regole. Scrivi codice reale in condizioni operative sotto la
+                                guida di mentor esperti.</p>
                         </div>
                         <div class="method__image-box">Step 02</div>
                     </div>
-        
+
                     <div class="method__item" data-aos="fade-up">
-                        <span class="step-num">03</span>
-                        <h3>Менторство & Стажировка</h3>
-                        <p>Экспертная поддержка на всех этапах. Разбор ваших ошибок действующими Tech-лидами и практика на реальных французских проектах.</p>
+                        <div class="method__info">
+                            <span class="step-num">03</span>
+                            <h3>Mentoring & Stage</h3>
+                            <p>Supporto esperto in ogni fase. Analisi degli errori con Tech-lead e pratica su progetti
+                                reali nel mercato italiano ed europeo.</p>
+                        </div>
+                        <div class="method__image-box">Step 03</div>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="reviews" id="reviews">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Истории <span class="text-gradient">успеха</span></h2>
-                    <p class="section-subtitle">Наши выпускники работают в ведущих технологических хабах Европы.</p>
+                    <h2 class="section-title">Storie di <span class="text-gradient">successo</span></h2>
+                    <p class="section-subtitle">I nostri laureati lavorano nei principali hub tecnologici d'Europa.</p>
                 </div>
-        
+
                 <div class="swiper reviews-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="review-card">
                                 <div class="review-card__user">
-                                    <img src="/img/one.jpg" alt="Student" class="review-card__avatar">
+                                    <img src="/img/one.jpg" alt="Studente" class="review-card__avatar">
                                     <div>
-                                        <h4>Marc Antoine</h4>
-                                        <span>Frontend в Dassault Systèmes</span>
+                                        <h4>Marco Antuono</h4>
+                                        <span>Frontend presso Dassault Systèmes</span>
                                     </div>
                                 </div>
-                                <p class="review-card__text">«Технология нового поколения — это не просто слова. Обучение в <?= $domainTitle ?> перевернуло моё понимание разработки. Решения, которые меняют правила игры, теперь часть моей ежедневной работы.»</p>
+                                <p class="review-card__text">«Tecnologia di nuova generazione non è solo uno slogan.
+                                    Studiare presso
+                                    <?= $domainTitle ?> ha cambiato la mia visione dello sviluppo. Ora le soluzioni
+                                    innovative sono parte del mio lavoro quotidiano.»
+                                </p>
                                 <div class="review-card__rating">
-                                    <i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="swiper-slide">
-                            <div class="review-card">
-                                <div class="review-card__user">
-                                    <img src="/img/three.jpg" alt="Student" class="review-card__avatar">
-                                    <div>
-                                        <h4>Елена Соколова</h4>
-                                        <span>Data Analyst (Freelance, Paris)</span>
-                                    </div>
-                                </div>
-                                <p class="review-card__text">«Легко разобраться даже без опыта. Пошаговый путь, понятный каждому, позволил мне сменить профессию за полгода. Платформа года, без преувеличений!»</p>
-                                <div class="review-card__rating">
-                                    <i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="swiper-slide">
-                            <div class="review-card">
-                                <div class="review-card__user">
-                                    <img src="/img/two.jpg" alt="Student" class="review-card__avatar">
-                                    <div>
-                                        <h4>Julien Bernard</h4>
-                                        <span>Junior AI Engineer</span>
-                                    </div>
-                                </div>
-                                <p class="review-card__text">«Экспертная поддержка на всех этапах. Когда я застрял на проекте с нейросетями, менторы помогли переосмыслить подход. Это было лучшим вложением в карьеру.»</p>
-                                <div class="review-card__rating">
-                                    <i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i>
+                                    <i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i
+                                        data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i
+                                        data-lucide="star" class="fill"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="review-card">
                                 <div class="review-card__user">
-                                    <img src="/img/one.jpg" alt="Student" class="review-card__avatar">
+                                    <img src="/img/three.jpg" alt="Studente" class="review-card__avatar">
                                     <div>
-                                        <h4>Marc Antoine</h4>
-                                        <span>Frontend в Dassault Systèmes</span>
+                                        <h4>Elena Rossi</h4>
+                                        <span>Data Analyst (Freelance, Milano)</span>
                                     </div>
                                 </div>
-                                <p class="review-card__text">«Технология нового поколения — это не просто слова. Обучение в <?= $domainTitle ?> перевернуло моё понимание разработки. Решения, которые меняют правила игры, теперь часть моей ежедневной работы.»</p>
+                                <p class="review-card__text">«Facile da capire anche senza esperienza. Il percorso
+                                    guidato mi ha permesso di cambiare carriera in sei mesi. La piattaforma dell'anno,
+                                    senza esagerazioni!»</p>
                                 <div class="review-card__rating">
-                                    <i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="swiper-slide">
-                            <div class="review-card">
-                                <div class="review-card__user">
-                                    <img src="/img/three.jpg" alt="Student" class="review-card__avatar">
-                                    <div>
-                                        <h4>Елена Соколова</h4>
-                                        <span>Data Analyst (Freelance, Paris)</span>
-                                    </div>
-                                </div>
-                                <p class="review-card__text">«Легко разобраться даже без опыта. Пошаговый путь, понятный каждому, позволил мне сменить профессию за полгода. Платформа года, без преувеличений!»</p>
-                                <div class="review-card__rating">
-                                    <i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="swiper-slide">
-                            <div class="review-card">
-                                <div class="review-card__user">
-                                    <img src="/img/two.jpg" alt="Student" class="review-card__avatar">
-                                    <div>
-                                        <h4>Julien Bernard</h4>
-                                        <span>Junior AI Engineer</span>
-                                    </div>
-                                </div>
-                                <p class="review-card__text">«Экспертная поддержка на всех этапах. Когда я застрял на проекте с нейросетями, менторы помогли переосмыслить подход. Это было лучшим вложением в карьеру.»</p>
-                                <div class="review-card__rating">
-                                    <i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i>
+                                    <i data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i
+                                        data-lucide="star" class="fill"></i><i data-lucide="star" class="fill"></i><i
+                                        data-lucide="star" class="fill"></i>
                                 </div>
                             </div>
                         </div>
@@ -334,112 +309,120 @@
                 </div>
             </div>
         </section>
+
         <section class="contact" id="contact">
             <div class="container contact__container">
                 <div class="contact__info">
-                    <h2 class="section-title">Готовы <br><span class="text-gradient">начать обучение?</span></h2>
-                    <p>Оставьте заявку на бесплатную консультацию. Мы поможем подобрать направление и оценить перспективы вашего проекта.</p>
-                    
+                    <h2 class="section-title">Pronto a <br><span class="text-gradient">iniziare?</span></h2>
+                    <p>Richiedi una consulenza gratuita. Ti aiuteremo a scegliere il percorso giusto e a valutare le tue
+                        prospettive.</p>
+
                     <div class="contact__badge">
                         <i data-lucide="info"></i>
-                        <span>Предложение активно только в странах ЕС</span>
+                        <span>Offerta valida solo nei paesi UE</span>
                     </div>
                 </div>
-        
+
                 <form id="contact-form" class="contact__form">
                     <div class="form-group">
-                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <input type="text" name="name" placeholder="Il tuo nome" required>
                     </div>
                     <div class="form-group">
                         <input type="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="tel" name="phone" placeholder="Телефон" required pattern="[0-9\+]+">
+                        <input type="tel" name="phone" placeholder="Telefono" required pattern="[0-9\+]+">
                     </div>
-                    
+
                     <div class="captcha">
-                        <label id="captcha-label">Сколько будет 5 + 3?</label>
-                        <input type="number" id="captcha-input" placeholder="Ответ" required>
+                        <label id="captcha-label">Quanto fa 5 + 3?</label>
+                        <input type="number" id="captcha-input" placeholder="Risposta" required>
                     </div>
-        
+
                     <label class="checkbox">
                         <input type="checkbox" required>
-                        <span>Я согласен с <a href="./personal-data-policy.php">политикой обработки данных</a></span>
+                        <span>Acconsento alla <a href="./personal-data-policy.php">politica di trattamento
+                                dati</a></span>
                     </label>
-        
+
                     <button type="submit" class="btn btn--primary btn--full">
-                        <span>Запросить доступ</span>
+                        <span>Richiedi accesso</span>
                         <i data-lucide="send"></i>
                     </button>
-                    
-                    <div id="form-success" class="form-message success">Спасибо! Ваша заявка принята.</div>
+
+                    <div id="form-success" class="form-message success">Grazie! La tua richiesta è stata inviata.</div>
                 </form>
             </div>
-        </section>       
-       
-
-        </main>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="container footer__grid">
             <div class="footer__col">
                 <a href="./#hero" class="logo logo--footer">
-                    <span class="logo__text"><?= $domainTitle ?></span>
+                    <span class="logo__text">
+                        <?= $domainTitle ?>
+                    </span>
                 </a>
-                <p class="footer__tagline">Технологии нового поколения для вашего карьерного взлета.</p>
+                <p class="footer__tagline">Tecnologie di nuova generazione per il tuo successo professionale.</p>
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Навигация</h4>
+                <h4 class="footer__title">Navigazione</h4>
                 <ul class="footer__links">
-                    <li><a href="./#hero">Главная</a></li>
-                    <li><a href="./#courses">Курсы</a></li>
-                    <li><a href="./#benefits">Преимущества</a></li>
-                    <li><a href="./#reviews">Отзывы</a></li>
+                    <li><a href="./#hero">Home</a></li>
+                    <li><a href="./#courses">Corsi</a></li>
+                    <li><a href="./#benefits">Vantaggi</a></li>
+                    <li><a href="./#reviews">Recensioni</a></li>
                 </ul>
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Юридическая информация</h4>
+                <h4 class="footer__title">Informazioni Legali</h4>
                 <ul class="footer__links">
-                    <li><a href="./privacy.php">Политика конфиденциальности</a></li>
-                    <li><a href="./cookies.php">Cookie файлы</a></li>
-                    <li><a href="./terms.php">Условия использования</a></li>
-                    <li><a href="./personal-data-policy.php">Персональные данные</a></li>
+                    <li><a href="./privacy.php">Privacy Policy</a></li>
+                    <li><a href="./cookies.php">Cookie Policy</a></li>
+                    <li><a href="./terms.php">Termini di Utilizzo</a></li>
+                    <li><a href="./personal-data-policy.php">Dati Personali</a></li>
                 </ul>
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Контакты</h4>
+                <h4 class="footer__title">Contatti</h4>
                 <ul class="footer__contact-list">
                     <li>
                         <i data-lucide="phone"></i>
-                        <a href="tel:+33189480054">+33 1 89 48 00 54</a>
+                        <a href="tel:+390697639128">+39 06 9763 9128</a>
                     </li>
                     <li>
                         <i data-lucide="mail"></i>
-                        <a href="mailto:hello@<?= $fullDomain ?>">hello@<?= $fullDomain ?></a>
+                        <a href="mailto:hello@<?= $fullDomain ?>">hello@
+                            <?= $fullDomain ?>
+                        </a>
                     </li>
                     <li>
                         <i data-lucide="map-pin"></i>
-                        <span>15 Rue de la Paix, 75002 Paris, France</span>
+                        <span>Via della Conciliazione, 15, 00193 Roma RM, Italia</span>
                     </li>
                 </ul>
             </div>
         </div>
-        
+
         <div class="container footer__bottom">
-            <p>&copy; 2026 <?= $domainTitle ?>. Все права защищены.</p>
+            <p>&copy; 2026
+                <?= $domainTitle ?>. Tutti i diritti riservati.
+            </p>
             <div class="footer__legal-inline">
-                <a href="./return.php">Возврат</a>
-                <a href="./disclaimer.php">Отказ от ответственности</a>
-                <a href="./contact.php">Контакты</a>
+                <a href="./return.php">Rimborsi</a>
+                <a href="./disclaimer.php">Disclaimer</a>
+                <a href="./contact.php">Contatti</a>
             </div>
         </div>
     </footer>
     <div id="cookie-popup" class="cookie-popup">
-        <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.php">Cookie политике</a>.</p>
-        <button id="cookie-accept" class="btn btn--header">Принять</button>
+        <p>Questo sito utilizza i cookie per migliorare l'esperienza. Maggiori informazioni nella nostra <a
+                href="./cookies.php">Cookie Policy</a>.</p>
+        <button id="cookie-accept" class="btn btn--header">Accetta</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -447,4 +430,5 @@
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

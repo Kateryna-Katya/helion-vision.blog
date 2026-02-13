@@ -1,5 +1,5 @@
 /**
- * Xpert-Link.fit | Official Premium Script 2026
+ * helion-vision.blog | Script Ufficiale Premium 2026
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -19,10 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const isActive = nav.classList.toggle('nav--active');
         burger.classList.toggle('burger--active');
         
-        // Блокируем скролл при открытом меню
+        // Blocca lo scroll quando il menu è aperto
         document.body.style.overflow = isActive ? 'hidden' : '';
 
-        // Анимируем ссылки внутри меню с разной задержкой
+        // Anima i link del menu con un ritardo progressivo
         if(isActive) {
             gsap.to(navLinks, {
                 opacity: 1,
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Закрытие меню при клике на ссылку
+    // Chiude il menu al clic su un link
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             nav.classList.remove('nav--active');
@@ -46,8 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 3. Deep Reveal Animation (Глубинная подгрузка)
-    // Добавляем класс reveal-item всем нужным элементам программно для чистоты HTML
+    // 3. Deep Reveal Animation (Caricamento profondo)
     const revealTargets = '.course-card, .benefit-item, .method__item, .section-title, .hero__badge';
     document.querySelectorAll(revealTargets).forEach(el => el.classList.add('reveal-item'));
 
@@ -59,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Используем Batch для обработки групп элементов
+    // Utilizzo di Batch per gestire gruppi di elementi
     ScrollTrigger.batch(".reveal-item", {
         onEnter: batch => gsap.to(batch, {
             opacity: 1,
@@ -105,19 +104,28 @@ document.addEventListener('DOMContentLoaded', () => {
         const label = document.getElementById('captcha-label');
         if(!label) return;
         const n1 = Math.floor(Math.random() * 10), n2 = Math.floor(Math.random() * 5);
-        label.innerText = `Подтвердите: ${n1} + ${n2} = ?`;
+        label.innerText = `Conferma: ${n1} + ${n2} = ?`;
 
         document.getElementById('contact-form')?.addEventListener('submit', function(e) {
             e.preventDefault();
             const ans = document.getElementById('captcha-input').value;
-            if(parseInt(ans) !== (n1+n2)) return alert('Капча неверна');
+            if(parseInt(ans) !== (n1+n2)) return alert('Il captcha è errato');
             
             const btn = this.querySelector('button');
-            btn.innerHTML = '<span>Отправка...</span>';
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<span>Invio in corso...</span>';
+            btn.disabled = true;
+
             setTimeout(() => {
                 this.reset();
                 document.getElementById('form-success').style.display = 'block';
-                btn.innerHTML = '<span>Отправлено!</span>';
+                btn.innerHTML = '<span>Inviato!</span>';
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                    document.getElementById('form-success').style.display = 'none';
+                }, 4000);
             }, 1500);
         });
     };
